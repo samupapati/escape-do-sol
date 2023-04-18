@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #252323;
+}
+
+.planeta{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;    
+    overflow: hidden;
+}
+
+#sol{
+    background-image: radial-gradient(yellow, #ffc400);
+    top: 200px;
+    left: 50px;
+    box-shadow: 0px 0px 25px 0px yellow;
+}
+
+#mercurio{
+    background-image: linear-gradient(50deg, #6685ca, #2c3d5e);
+    top: 200px;
+    left: 200px;
+}
+
+#venus{
+    background-image: linear-gradient(50deg, #a86969, #aa5a5a);
+    top: 200px;
+    left: 350px;
+}
+
+#terra{
+    background-image: linear-gradient(50deg, #2d4986, #3975e4);
+    top: 200px;
+    left: 500px;
+}
+
+#terra .detalhes{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(45% 98%, 38% 89%, 34% 83%, 31% 75%, 26% 66%, 21% 56%, 19% 48%, 21% 40%, 27% 36%, 32% 32%, 33% 25%, 32% 19%, 27% 14%, 21% 10%, 16% 6%, 9% 1%, 57% 0%, 56% 8%, 52% 12%, 47% 17%, 42% 20%, 40% 25%, 43% 29%, 49% 31%, 54% 32%, 61% 32%, 66% 34%, 70% 39%, 73% 45%, 73% 52%, 72% 56%, 69% 64%, 65% 71%, 60% 77%, 52% 90%);
+    background-image: linear-gradient(50deg, #27a54d, #0f6925);
+}
+
+#lua{
+    background-image: linear-gradient(50deg, #dfdddd, #696969);
+    top: 200px;
+    left: 650px;
+}
+
+#lua .buracos{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: transparent;
+    /* border: 1px solid #696969; */
+    box-shadow: 0px -5px 5px 0px gray inset;
+    position: absolute;
+}
+
+#lua .buracos:first-child{
+    top: 10px;
+    right: 10px;
+}
+
+#lua .buracos:last-child{
+    width: 25%;
+    height: 25%;
+    bottom: 15px;
+    left: 15px;
+}
+
+#marte{
+    top: 200px;
+    left: 800px;
+    background-color: brown;
+}
+
+#jupiter{
+    top: 200px;
+    left: 950px;
+    background-image: linear-gradient(50deg, #afc1d6, #4c5d68);
+}
+
+#saturno{
+    top: 200px;
+    left: 1100px;
+    background-color: #967a2c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+#saturno #anel{
+    width: 150px;
+    height: 20%;
+    border-radius: 50%;
+    background-color: #bb9631;
+    transform: translate(15px, 15px, 15px);
+    position: absolute;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#saturno #cilindro{
+    width: 65%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: #967a2c;
+    position: absolute;
+    top: -3px;
+}
+
+#urano{
+    top: 200px;
+    left: 1250px;
+    background-image: linear-gradient(50deg, #6387d4, #3480c7);
+}
+
+#netuno{
+    top: 200px;
+    left: 1400px;
+    background-image: linear-gradient(50deg, #63b0d4, #34a5c7);
+}
+
+#astronauta{
+    width: 100px;
+    position: absolute;
+    top: 118px;
+    left: 50px;
+
+}
+
+.anima{
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.pular{
+    animation-name: pular;
+}
+
+@keyframes pular{
+    0%{
+        top: 118px;
+        left: 50px;
+    }
+    50%{
+        top: 75px;
+    }
+    100%{
+        top: 118px;
+        left: 200px;
+    }
+}
